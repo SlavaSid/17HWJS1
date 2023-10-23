@@ -17,8 +17,7 @@ const green = new Sell('Green', 'ул. Петра Мстиславца 11, Ми�
 const proStore = new Sell('ProStore', 'пр-т Дзержинского, 126, Минск');
 
 const newArr = shops.map(item => item.address);
-console.log(shops);
-console.log(newArr);
+
 
 
 // Задание 2
