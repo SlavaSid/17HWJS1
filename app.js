@@ -13,7 +13,6 @@ this.title = title;
 this.address = address;
 shops.push(this);
 }
-
 const Green = new Shop('Green', 'ул. Петра Мстиславца 11, Минск');
 const ProStore = new Shop('ProStore', 'пр-т Дзержинского, 126, Минск');
 
@@ -32,10 +31,9 @@ const newFunc = async () => {
     const response = await fetch(url); 
     const info = await response.json();
     info.forEach(element => {
-    ul.insertAdjacentHTML('beforeend', `<li>${element.name}</li>`);
+    ul.innerHTML += `<li>${element.name}</li>`;
     });
-    
-};
+    };
 
   
 try{
